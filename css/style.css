@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Campton";
-  src: url("../font/Campton.Medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Campton-black";
   src: url("../font/Campton.Black.otf") format("opentype");
   font-weight: bolder;
@@ -16,6 +9,20 @@
   font-family: "Campton-bold";
   src: url("../font/Campton.Bold.otf") format("opentype");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton-extra-bold";
+  src: url("../font/Campton.ExtraBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton";
+  src: url("../font/Campton.Medium.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -102,8 +109,8 @@ ul {
 }
 
 .info-banner {
-  margin-top: 25vh;
-  padding-left: 12rem;
+  /* margin-left: 12%; */
+  margin: 10% 12%;
 }
 
 .titulo-banner {
@@ -141,4 +148,122 @@ ul {
   border-radius: 0.4rem;
   font-size: 1rem;
   font-family: Campton-book;
+}
+
+.bullet {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.div-empreendimento {
+  margin-top: -7rem;
+}
+
+.btn-empreendimento-box {
+  width: 12rem;
+  height: 12rem;
+  background-color: #081e66;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+  text-align: center;
+}
+
+.div-empreendimento-interna-btn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragrafo-div-empreendimento {
+  text-align: center;
+  color: white;
+  font-family: Campton-book;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.paragrafo-btn-empreendimento {
+  font-family: Campton-extra-bold;
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+.btn-clique-aqui {
+  font-family: Campton;
+  color: #f1c433;
+}
+.pq-escolher-opcao {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  margin: 8rem auto;
+  width: 70%;
+}
+
+.escolher-opcao-texto-esquerdo > h2 {
+  color: #f1c433;
+  font-family: Campton-black;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.escolher-opcao-texto-esquerdo > p {
+  font-family: Campton-book;
+  margin-bottom: 3rem;
+  color: #081e66;
+  line-height: 1.5rem;
+}
+
+.vantagens-opcao > p {
+  font-family: Campton-book;
+  font-size: 1.5rem;
+  color: #081e66;
+  margin-bottom: 3rem;
+}
+
+.vantagens-opcao > p > span {
+  font-family: Campton-extra-bold;
+}
+
+.vantagens-opcao-conteudo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titulo-vantagens-opcao {
+  font-family: Campton-extra-bold;
+  color: #081e66;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.vantagens-opcao-conteudo > p {
+  font-family: Campton-extra-bold;
+  color: #f1c433;
+  font-size: 4rem;
+  padding-right: 1rem;
+}
+
+.paragrafo-vantagens-opcao {
+  font-family: Campton-book;
+  color: #081e66;
+  font-size: 0.8rem;
+}
+
+.hr-vantagens {
+  margin: 2.2rem 0;
+  border-top: 1px solid #094cfa;
 }
