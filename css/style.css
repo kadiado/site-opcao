@@ -307,11 +307,7 @@ ul > li > a {
   border-top: 1px solid #094cfa;
 }
 
-@media screen and (max-width: 1360px) {
-  body {
-    overflow: hidden;
-  }
-
+@media only screen and (max-width: 1360px) {
   .nav-list {
     position: absolute;
     top: 10vh;
@@ -332,7 +328,7 @@ ul > li > a {
   }
 
   .nav-list li a {
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
   }
 
   .mobile-menu {
