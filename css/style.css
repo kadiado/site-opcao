@@ -217,9 +217,25 @@ ul > li > a {
 
 .div-empreendimento-interna-btn {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 690px) {
+  .div-empreendimento-interna-btn {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .btn-empreendimento-box {
+    width: 20rem;
+  }
+
+  .div-empreendimento {
+    margin-top: -12%;
+  }
 }
 
 .paragrafo-div-empreendimento {
