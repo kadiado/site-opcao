@@ -45,7 +45,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2% 12%;
+  padding: 1% 12%;
 }
 
 .menu-interno {
@@ -156,8 +156,8 @@ ul > li > a {
 .titulo-banner {
   font-family: Campton-bold;
   color: white;
-  font-size: 3.7rem;
-  line-height: 3.4rem;
+  font-size: min(5rem, 8.1vw);
+  line-height: min(5rem, 8vw);
   margin-bottom: 0.8rem;
 }
 
@@ -223,7 +223,7 @@ ul > li > a {
   justify-content: center;
 }
 
-@media only screen and (max-width: 690px) {
+@media (max-width: 690px) {
   .div-empreendimento-interna-btn {
     flex-direction: column;
     width: auto;
@@ -234,7 +234,12 @@ ul > li > a {
   }
 
   .div-empreendimento {
-    margin-top: -12%;
+    margin-top: -22%;
+  }
+  
+  .conteudo-div-mapa{
+    flex-direction: column;
+    width: auto;
   }
 }
 
@@ -271,8 +276,8 @@ ul > li > a {
 .escolher-opcao-texto-esquerdo > h2 {
   color: #f1c433;
   font-family: Campton-black;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: min(5rem, 13vw);
+  line-height: min(5rem, 12vw);
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
@@ -326,7 +331,7 @@ ul > li > a {
   border-top: 1px solid #094cfa;
 }
 
-@media only screen and (max-width: 1360px) {
+@media  (max-width: 1360px) {
   .nav-list {
     position: absolute;
     top: 10vh;
@@ -347,7 +352,7 @@ ul > li > a {
   }
 
   .nav-list li a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .mobile-menu {
@@ -448,8 +453,8 @@ ul > li > a {
 .titulo-simulacao-fgts {
   font-family: Campton-extra-bold;
   color: #f1c433;
-  font-size: 4.6rem;
-  line-height: 4.6rem;
+  font-size: min(5rem, 12vw);
+  line-height: min(5rem, 12vw);
   margin-bottom: 0.2rem;
 }
 
@@ -484,4 +489,78 @@ ul > li > a {
 .label-concordo-simulacao {
   color: #585857;
   font-family: Campton-book;
+}
+
+/*mapa*/
+
+.section-mapa-externo{
+  background: url('../img/mapa/mapa-bg.png') no-repeat center center;
+  background-size: cover;
+  /*height: 90vh;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+
+}
+
+.div-mapa-externo{
+  padding: 10% 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.h2-mapa{
+  text-align: center;
+  color: white;
+  font-family: Campton-extra-bold;
+  font-size: min(3.5rem, 10vw);
+  line-height: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+
+.conteudo-div-mapa {
+  text-align: center;
+  
+
+}
+
+.div-mapa-h4 {
+  color: #f1c433;
+  font-family: Campton-extra-bold;
+  font-size: min(2.2rem, 3.5vh);
+  line-height: 2.3rem;
+}
+
+.div-mapa-p {
+  color: white;
+  font-family: Campton-book;
+  margin-bottom: 1rem;
+  height: 14vh;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+}
+
+.div-mapa-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-family: Campton-book;
+  padding: 0.6rem 4rem 0.6rem 1rem;
+}
+
+.div-contato{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  width: 80%;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-left: 1rem;
+  gap: 5%;
+  
 }
